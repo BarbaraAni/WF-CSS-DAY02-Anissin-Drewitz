@@ -16,8 +16,10 @@ header input {
 }
 main {
 	display: flex;
+	margin-bottom: 20px;
 }
 .main {
+	border:dotted red;
 	width: 49%;
 	overflow: hidden;
 }
@@ -25,6 +27,9 @@ main {
 	width:100%;
 	height: 300px;
 	object-fit: contain;
+}
+.rechts{
+	display: table;
 }
 .swipe {
 	display: flex;
@@ -35,6 +40,21 @@ main {
 	height: 85px;
 }
 #descr {
+	display: table-cell;
+	vertical-align: middle;
 	margin-left: 20px;
 	
+}
+.alternateProduct{
+	width: 100vw;
+	display: flex;
+}
+.alternative{
+	padding:30px;
+	width: 30vw;
+	overflow: hidden;
+}
+.alternative img{
+	height: 30vh;
+	float:left;
 }
