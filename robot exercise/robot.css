@@ -1,7 +1,60 @@
+
 img {
+  visibility: hidden;
   width: 50px;
 }
 #face {
+  visibility: visible;
   width: 400px;
+}
+#eyes1{
+  visibility: hidden;
+  width: 250px;
+  position: absolute;
+  top:150px;
+  left:75px;
+}
+#eyes2{
+  visibility: visible;
+  width: 250px;
+  position: absolute;
+  top:150px;
+  left:75px;
+}
+#mouth1{
+  visibility: visible;
+  width: 200px;
+  position: absolute;
+  left:100px;
+  top: 300px;
+}
+#mouth2{
+  visibility: hidden;
+  width: 200px;
+  position: absolute;
+  left:100px;
+  top: 300px;
+}
+#nose1{
+  visibility: visible;
+  width:50px;
+  position: absolute;
+  height: 100px;
+  top:225px;
+  left:175px;
+}
+#ears1{
+  visibility: visible;
+  width:400px;
+  position: absolute;
+  top:100px;
+  left:0px;
+}
+#hair1{
+  visibility: visible;
+  width:320px;
+  position: absolute;
+  top:-50px;
+  left:50;
 }
 
