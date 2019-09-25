@@ -14,10 +14,10 @@
 	<div class="main">
 		<img id="ersetzen" src="Couchtisch.jpg" alt="">
 			<div class="swipe">
-				<img src="Couchtisch.jpg" alt="">
-				<img id="pic2" src="CT2.jpg" alt="">
-				<img src="CT3.jpg" alt="">
-				<img src="CT1.jpg" alt="">
+				<img onmouseover="hoverImage('Couchtisch.jpg')" onmouseout="imageHoverout()" onclick="changeOnclick('Couchtisch.jpg')" src="Couchtisch.jpg" alt="">
+				<img onmouseover="hoverImage('CT2.jpg')" onmouseout="imageHoverout()" onclick="changeOnclick('CT2.jpg')" id="pic2" src="CT2.jpg" alt="">
+				<img onmouseover="hoverImage('CT3.jpg')" onmouseout="imageHoverout()" onclick="changeOnclick('CT3.jpg')" src="CT3.jpg" alt="">
+				<img onmouseover="hoverImage('CT1.jpg')" onmouseout="imageHoverout()" onclick="changeOnclick('CT1.jpg')" src="CT1.jpg" alt="">
 			</div>
 	</div>
 	<div class="main rechts">
@@ -49,5 +49,18 @@
 	</div>
 	<div class="alternative1"><b>Rivet Beistelltisch mit Schublade und schwarzem Metalluntergestell, Nussbaum<br><br>139,99 € </b>Kostenlose Lieferung</div>
 </div>
+<script>
+	var mainPath ="Couchtisch.jpg"
+	function hoverImage(src){
+		document.getElementById("ersetzen").src=src;
+	}
+	function imageHoverout(){
+		document.getElementById("ersetzen").src=mainPath;
+	}
+	function changeOnclick(src){
+		mainPath=src;
+		document.getElementById("ersetzen").src=mainPath;
+	}
+</script>
 </body>
 </html>

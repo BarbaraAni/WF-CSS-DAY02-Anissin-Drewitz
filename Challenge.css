@@ -38,12 +38,17 @@ main {
 	justify-content: space-around;
 }
 .swipe img {
+	opacity: 0.7;
 	width: 20%;	
 	height: 85px;
 }
 .descr {
 	display: table-cell;
 	vertical-align: middle;
+}
+.swipe img:hover{
+	opacity: 1;
+	cursor:pointer;
 }
 .descr li {
 	margin-left: 20px;
@@ -71,14 +76,6 @@ main {
 	float:left;
 }
 
-#ersetzen:hover{
-	content: url(CT1.jpg);
-	cursor: pointer;
-}
-.swipe #pic2:hover{
-	content: url(CT3.jpg);
-	cursor: pointer;
-}
 .money {
 	font-size: 1.2em;
 }
